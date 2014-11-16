@@ -1,0 +1,39 @@
+{
+  "name": "lazy-timer",
+  "version": "0.0.0",
+  "author": "Joris van der Wel <joris@jorisvanderwel.com>",
+  "description": "Invoke a function that is expensive to execute (computation, database queries, etc) in a delay. This module creates a new function (the invoker) that wraps your function. Calling the invoker multiple times during the delay only executes your function once. This is especially useful for slowly updating state, based on rapid changes by the user.",
+  "keywords": [
+    "delay",
+    "delayed",
+    "dirty",
+    "interval",
+    "lazy",
+    "nagle",
+    "setTimeout",
+    "setInterval",
+    "time",
+    "timeout",
+    "timer"
+  ],
+  "bugs": {
+    "url": "https://github.com/Joris-van-der-Wel/lazy-timer/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joris-van-der-Wel/lazy-timer"
+  },
+  "main": "./index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "nodeunit": "^0.9.0"
+  },
+  "scripts": {
+    "test": "istanbul cover ./node_modules/nodeunit/bin/nodeunit ./test.js"
+  }
+}
